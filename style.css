@@ -1,0 +1,5251 @@
+/* ==========================================
+   GOOGLE FONT
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:#F4F8FA;
+
+    color:#254E58;
+
+    min-height:100vh;
+
+}
+
+/* ==========================================
+   NAVBAR
+========================================== */
+
+.navbar{
+
+    width:100%;
+
+    height:75px;
+
+    background:#254E58;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 50px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+
+    position:sticky;
+
+    top:0;
+
+    z-index:100;
+
+}
+
+.logo{
+
+    color:white;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.logo i{
+
+    color:#88BDBC;
+
+}
+
+.navbar ul{
+
+    list-style:none;
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+.navbar a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.navbar a:hover{
+
+    color:#88BDBC;
+
+}
+
+/* ==========================================
+   HERO
+========================================== */
+
+.hero{
+
+    width:90%;
+
+    margin:35px auto;
+
+}
+
+.hero h1{
+
+    font-size:40px;
+
+    font-weight:700;
+
+}
+
+.hero p{
+
+    margin-top:10px;
+
+    color:#666;
+
+}
+
+/* ==========================================
+   STATISTICS
+========================================== */
+
+.stats{
+
+    width:90%;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+.card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.card i{
+
+    font-size:34px;
+
+    color:#10A37F;
+
+    margin-bottom:15px;
+
+}
+
+.card h2{
+
+    font-size:32px;
+
+}
+
+.card p{
+
+    color:#777;
+
+}
+
+/* ==========================================
+   PRACTICE
+========================================== */
+
+.practice-card{
+
+    width:90%;
+
+    margin:40px auto;
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:35px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.practice-card h2{
+
+    margin-bottom:25px;
+
+}
+
+.practice-controls{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr auto;
+
+    gap:30px;
+
+    align-items:end;
+
+}
+
+.practice-controls label{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    font-weight:600;
+
+}
+
+.practice-controls select{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#F3F6F8;
+
+    font-size:16px;
+
+}
+
+#targetWord{
+
+    color:#10A37F;
+
+    font-size:32px;
+
+}
+
+.buttons{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.buttons button{
+
+    padding:15px 30px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    background:#254E58;
+
+    color:white;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+.buttons button:hover{
+
+    background:#10A37F;
+
+}
+/* ==========================================
+   CAMERA SECTION
+========================================== */
+
+.camera-section{
+
+    width:90%;
+    margin:40px auto;
+
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:30px;
+
+}
+
+.camera-box,
+.prediction-box{
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:30px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.camera-box h2,
+.prediction-box h2{
+
+    margin-bottom:20px;
+
+    color:#254E58;
+
+}
+
+#video{
+
+    width:100%;
+    height:500px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    background:#000;
+
+}
+
+.camera-buttons{
+
+    margin-top:20px;
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.camera-buttons button{
+
+    flex:1;
+
+    border:none;
+
+    cursor:pointer;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    color:white;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+#startBtn{
+
+    background:#10A37F;
+
+}
+
+#stopBtn{
+
+    background:#EF4444;
+
+}
+
+.camera-buttons button:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/* ==========================================
+   HOME CAMERA CARD
+========================================== */
+
+.camera-card {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+}
+
+.camera-card h2 {
+    margin-bottom: 20px;
+    color: #254E58;
+}
+
+.camera-card video {
+    width: 100%;
+    max-height: 600px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+    background: #000;
+}
+
+.camera-card .buttons {
+    margin-top: 20px;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+
+    .camera-card {
+        width: 92%;
+        padding: 20px;
+        margin: 25px auto;
+    }
+
+    .camera-card video {
+        aspect-ratio: 4 / 3;
+        border-radius: 15px;
+    }
+
+}
+/* ==========================================
+   PREDICTION
+========================================== */
+
+.prediction-result{
+
+    text-align:center;
+
+    margin-top:20px;
+
+}
+
+.prediction-result h1{
+
+    font-size:42px;
+
+    color:#10A37F;
+
+}
+
+.prediction-result p
+{
+
+    margin-top:10px;
+
+    color:#666;
+
+    font-size:17px;
+
+}
+
+
+/* ==========================================
+   CONFIDENCE DONUT
+========================================== */
+
+.donut {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin: 25px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.donut svg {
+    width: 180px;
+    height: 180px;
+    transform: rotate(-90deg);
+    overflow: visible;
+}
+
+/* Background Ring */
+
+.donut .bg {
+    fill: none;
+    stroke: #D9E5E7;
+    stroke-width: 14;
+}
+
+/* Progress Ring */
+
+#progressCircle {
+    fill: none;
+    stroke: #254E58;
+    stroke-width: 14;
+    stroke-linecap: round;
+
+    stroke-dasharray: 408.4;
+    stroke-dashoffset: 408.4;
+
+    transition:
+        stroke-dashoffset 0.5s ease,
+        stroke 0.3s ease;
+}
+
+/* Center Circle */
+
+.donut-text {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 105px;
+    height: 105px;
+
+    background: #FFFFFF;
+
+    border-radius: 50%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    box-shadow:
+        0 5px 18px rgba(37, 78, 88, 0.12);
+}
+
+/* Percentage */
+
+.donut-text span {
+    font-size: 27px;
+
+    font-weight: 700;
+
+    color: #254E58;
+
+    line-height: 1.2;
+}
+
+/* Confidence */
+
+.donut-text small {
+    margin-top: 5px;
+
+    font-size: 11px;
+
+    font-weight: 500;
+
+    color: #6B7C80;
+}
+
+/* ==========================================
+   DONUT RESPONSIVE
+========================================== */
+
+@media (max-width: 600px) {
+
+    .donut {
+        width: 155px;
+        height: 155px;
+    }
+
+    .donut svg {
+        width: 155px;
+        height: 155px;
+    }
+
+    .donut-text {
+        width: 90px;
+        height: 90px;
+    }
+
+    .donut-text span {
+        font-size: 23px;
+    }
+
+    .donut-text small {
+        font-size: 10px;
+    }
+}
+/* ==========================================
+   PRACTICE STATS
+========================================== */
+
+.practice-stats{
+
+    width:90%;
+
+    margin:40px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+.stat-box{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.stat-box:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.stat-box i{
+
+    font-size:30px;
+
+    color:#10A37F;
+
+    margin-bottom:15px;
+
+}
+
+.stat-box h2{
+
+    font-size:32px;
+
+}
+
+.stat-box p{
+
+    margin-top:10px;
+
+    color:#666;
+
+}
+/* ==========================================
+   STATUS CARD
+========================================== */
+
+.status-card {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px 25px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+}
+
+.status-card h3 {
+    color: #254E58;
+    margin-bottom: 8px;
+}
+
+.status-card p {
+    color: #666;
+}
+/* ==========================================
+   DAILY GOAL
+========================================== */
+
+.goal-card{
+
+    width:90%;
+
+    margin:40px auto;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.goal-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:20px;
+
+}
+
+.progress-bar{
+
+    width:100%;
+
+    height:18px;
+
+    background:#E6E6E6;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+#goalProgress{
+
+    width:0%;
+
+    height:100%;
+
+    background:linear-gradient(90deg,#10A37F,#88BDBC);
+
+    transition:.5s;
+
+}
+
+/* ==========================================
+   HISTORY + RECOMMENDATION
+========================================== */
+
+.bottom-grid{
+
+    width:90%;
+
+    margin:40px auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:30px;
+
+}
+
+.history-card,
+.recommend-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.history-card ul{
+
+    list-style:none;
+
+    margin-top:20px;
+
+}
+
+.history-card li{
+
+    padding:12px;
+
+    border-bottom:1px solid #eee;
+
+}
+
+#recommendations{
+
+    margin-top:20px;
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+}
+
+#recommendations span{
+
+    background:#254E58;
+
+    color:white;
+
+    padding:10px 18px;
+
+    border-radius:30px;
+
+}
+
+/* ==========================================
+   CHART
+========================================== */
+
+.chart-card{
+
+    width:90%;
+
+    margin:40px auto;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.chart-card canvas{
+
+    margin-top:20px;
+
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer{
+
+    margin-top:60px;
+
+    background:#254E58;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+}
+/* ==========================================
+   ANIMATIONS
+========================================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+.card,
+.practice-card,
+.camera-box,
+.prediction-box,
+.stat-box,
+.goal-card,
+.history-card,
+.recommend-card,
+.chart-card{
+
+    animation:fadeUp .8s ease;
+
+}
+
+/* ==========================================
+   HOVER EFFECTS
+========================================== */
+
+.card:hover,
+.stat-box:hover,
+.practice-card:hover,
+.camera-box:hover,
+.prediction-box:hover,
+.history-card:hover,
+.recommend-card:hover,
+.chart-card:hover,
+.goal-card:hover{
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+button{
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#E5ECEF;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#88BDBC;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#254E58;
+
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+/* ---------- TABLET ---------- */
+
+@media (max-width: 1100px) {
+
+    .navbar {
+        padding: 0 30px;
+    }
+
+    .navbar ul {
+        gap: 20px;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .practice-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .camera-section {
+        grid-template-columns: 1fr;
+    }
+
+    .practice-controls {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .practice-controls .buttons {
+        grid-column: 1 / -1;
+    }
+
+    .bottom-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #video {
+        height: auto;
+        max-height: 550px;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+    }
+
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        height: auto;
+        min-height: 70px;
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 18px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+
+    .hero {
+        width: 92%;
+        margin: 25px auto;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+        text-align: center;
+        line-height: 1.3;
+    }
+
+    .hero p {
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .stats {
+        width: 92%;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .card {
+        padding: 20px 15px;
+    }
+
+    .card h2 {
+        font-size: 25px;
+    }
+
+    .practice-card {
+        width: 92%;
+        padding: 22px;
+        margin: 25px auto;
+    }
+
+    .practice-controls {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .practice-controls .buttons {
+        grid-column: auto;
+    }
+
+    .buttons {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .buttons button {
+        width: 100%;
+    }
+
+    .camera-section {
+        width: 92%;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .camera-box,
+    .prediction-box {
+        padding: 20px;
+        border-radius: 18px;
+    }
+
+    #video {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+
+    .camera-buttons {
+        flex-direction: column;
+    }
+
+    .camera-buttons button {
+        width: 100%;
+    }
+
+    .prediction-result h1 {
+        font-size: 32px;
+        word-break: break-word;
+    }
+
+    .confidence-card {
+        margin-top: 25px;
+    }
+
+    .practice-stats {
+        width: 92%;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .stat-box {
+        padding: 20px 10px;
+    }
+
+    .stat-box h2 {
+        font-size: 25px;
+    }
+
+    .goal-card {
+        width: 92%;
+        padding: 22px;
+    }
+
+    .goal-header {
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .bottom-grid {
+        width: 92%;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .history-card,
+    .recommend-card {
+        padding: 22px;
+    }
+
+    .chart-card {
+        width: 92%;
+        padding: 22px;
+    }
+
+}
+
+
+/* ---------- SMALL MOBILE ---------- */
+
+@media (max-width: 480px) {
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .navbar ul {
+        gap: 8px 12px;
+    }
+
+    .navbar a {
+        font-size: 13px;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .practice-stats {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card h2 {
+        font-size: 24px;
+    }
+
+    .stat-box h2 {
+        font-size: 23px;
+    }
+
+    .practice-card {
+        padding: 18px;
+    }
+
+    .camera-box,
+    .prediction-box {
+        padding: 16px;
+    }
+
+    #video {
+        aspect-ratio: 4 / 3;
+    }
+
+    .prediction-result h1 {
+        font-size: 28px;
+    }
+
+    .confidence-text h2 {
+        font-size: 28px;
+    }
+
+}
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media(max-width:480px){
+
+.logo{
+
+font-size:22px;
+
+}
+
+.card h2{
+
+font-size:26px;
+
+}
+
+.stat-box h2{
+
+font-size:26px;
+
+}
+
+.prediction-result h1{
+
+font-size:32px;
+
+}
+
+.confidence-text h2{
+
+font-size:28px;
+
+}
+
+.practice-card{
+
+padding:20px;
+
+}
+
+.camera-box{
+
+padding:20px;
+
+}
+
+.prediction-box{
+
+padding:20px;
+
+}
+
+}
+
+/* ==========================================
+   GLASS EFFECT
+========================================== */
+
+.glass{
+
+background:rgba(255,255,255,.65);
+
+backdrop-filter:blur(15px);
+
+border:1px solid rgba(255,255,255,.3);
+
+}
+
+/* ==========================================
+   SHADOW COLORS
+========================================== */
+
+.shadow-green{
+
+box-shadow:0 10px 30px rgba(16,163,127,.25);
+
+}
+
+.shadow-blue{
+
+box-shadow:0 10px 30px rgba(37,78,88,.25);
+
+}
+
+/* ==========================================
+   BADGES
+========================================== */
+
+.badge{
+
+display:inline-block;
+
+padding:8px 16px;
+
+border-radius:25px;
+
+font-size:14px;
+
+font-weight:600;
+
+background:#10A37F;
+
+color:white;
+
+}
+
+.badge.warning{
+
+background:#F59E0B;
+
+}
+
+.badge.danger{
+
+background:#EF4444;
+
+}
+
+.badge.primary{
+
+background:#254E58;
+
+}
+/* =========================================
+   SIGN LANGUAGE GRID
+========================================= */
+/* =========================================
+   SIGN LANGUAGE GRID
+========================================= */
+
+.sign-grid {
+    width: 92%;
+    max-width: 1200px;
+
+    margin: 30px auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(6, 1fr);
+
+    gap: 16px;
+}
+
+/* Individual Sign */
+
+.sign-card {
+    background: #FFFFFF;
+
+    border-radius: 14px;
+
+    padding: 10px;
+
+    text-align: center;
+
+    box-shadow:
+        0 5px 18px rgba(37, 78, 88, 0.08);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.sign-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 25px rgba(37, 78, 88, 0.15);
+}
+
+/* Image */
+
+.sign-card img {
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    object-fit: contain;
+
+    display: block;
+
+    border-radius: 10px;
+
+    background: #F4F8FA;
+}
+
+/* Letter */
+
+.sign-card h3 {
+    margin-top: 8px;
+
+    margin-bottom: 2px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    color: #254E58;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .sign-grid {
+        grid-template-columns: repeat(4, 1fr);
+
+        gap: 14px;
+    }
+
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .sign-grid {
+        width: 94%;
+
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 10px;
+    }
+
+    .sign-card {
+        padding: 7px;
+
+        border-radius: 12px;
+    }
+
+    .sign-card h3 {
+        font-size: 14px;
+
+        margin-top: 6px;
+    }
+
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 450px) {
+
+    .sign-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 10px;
+    }
+
+    .sign-card {
+        padding: 6px;
+    }
+
+    .sign-card h3 {
+        font-size: 14px;
+    }
+
+}
+/* =========================================
+   HOME PAGE CONTENT SECTIONS
+========================================= */
+
+.home-section {
+    width: 92%;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 40px;
+
+    background: #ffffff;
+
+    border-radius: 24px;
+
+    box-shadow:
+        0 10px 30px rgba(37, 78, 88, 0.08);
+}
+
+.home-section > h2 {
+    text-align: center;
+
+    color: #254E58;
+
+    font-size: 30px;
+
+    margin-bottom: 12px;
+}
+
+.home-section > p {
+    text-align: center;
+
+    color: #66777B;
+
+    margin-bottom: 30px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   HOW IT WORKS
+========================================= */
+
+.step-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+
+    margin-top: 30px;
+}
+
+.step {
+
+    background: #F4F8FA;
+
+    border: 1px solid #DCE7E9;
+
+    border-radius: 18px;
+
+    padding: 28px 20px;
+
+    text-align: center;
+
+    transition: all 0.3s ease;
+}
+
+.step:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 12px 25px rgba(37, 78, 88, 0.12);
+}
+
+.step h3 {
+
+    width: 55px;
+    height: 55px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #254E58;
+
+    color: white;
+
+    font-size: 22px;
+}
+
+.step p {
+
+    color: #254E58;
+
+    font-size: 16px;
+
+    font-weight: 500;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   TECHNOLOGIES
+========================================= */
+
+.tech-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+.tech-grid span {
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 15px 20px;
+
+    background: #F4F8FA;
+
+    border: 1px solid #DCE7E9;
+
+    border-radius: 12px;
+
+    color: #254E58;
+
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.tech-grid span:hover {
+
+    background: #254E58;
+
+    color: white;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   ABOUT SECTION
+========================================= */
+
+.about-section {
+
+    text-align: center;
+}
+
+.about-section h2 {
+
+    color: #254E58;
+
+    margin-bottom: 15px;
+}
+
+.about-section p {
+
+    color: #66777B;
+
+    line-height: 1.8;
+
+    margin: 8px 0;
+}
+
+
+/* =========================================
+   CONTACT SECTION
+========================================= */
+
+.contact-section {
+
+    text-align: center;
+}
+
+.contact-section h2 {
+
+    color: #254E58;
+
+    margin-bottom: 15px;
+}
+
+.contact-section p {
+
+    color: #66777B;
+
+    font-size: 16px;
+}
+
+
+/* =========================================
+   HOME FOOTER
+========================================= */
+
+footer {
+
+    width: 100%;
+
+    margin-top: 70px;
+
+    background: #254E58;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+    font-size: 15px;
+}
+
+footer p {
+
+    margin: 0;
+
+    color: white;
+}
+
+
+/* =========================================
+   RESPONSIVE - TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .step-container {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .tech-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+/* =========================================
+   RESPONSIVE - MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .home-section {
+
+        width: 94%;
+
+        padding: 25px 18px;
+
+        margin: 40px auto;
+
+        border-radius: 18px;
+    }
+
+    .home-section > h2 {
+
+        font-size: 24px;
+
+    }
+
+    .step-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+
+    }
+
+    .step {
+
+        padding: 22px 15px;
+
+    }
+
+    .tech-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+
+    }
+
+    .tech-grid span {
+
+        padding: 13px;
+
+    }
+
+    footer {
+
+        margin-top: 45px;
+
+        padding: 25px 15px;
+
+        font-size: 13px;
+
+    }
+
+}
+/* =====================================================
+   HOME PAGE LOWER SECTIONS
+===================================================== */
+
+.section-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 45px;
+}
+
+.section-label {
+    display: inline-block;
+    margin-bottom: 10px;
+
+    color: #10A37F;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.section-heading h2 {
+    margin-bottom: 12px;
+
+    color: #254E58;
+
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.section-heading p {
+    color: #667477;
+
+    font-size: 15px;
+    line-height: 1.7;
+}
+/* =====================================================
+   HOW IT WORKS
+===================================================== */
+
+.guide-section {
+    width: 92%;
+    max-width: 1400px;
+    margin: 70px auto;
+    text-align: center;
+}
+
+.guide-section > h2 {
+    margin: 0 0 12px;
+    font-size: 38px;
+    font-weight: 700;
+    color: #254E58;
+}
+
+.guide-section > p {
+    margin: 0 auto 40px;
+    max-width: 850px;
+    color: #66787D;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   STEP CONTAINER
+===================================================== */
+
+.step-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+}
+
+
+/* =====================================================
+   STEP CARD
+===================================================== */
+
+.step {
+    position: relative;
+
+    background: #ffffff;
+
+    border: 1px solid #DCE8EA;
+
+    border-radius: 22px;
+
+    padding: 38px 25px 30px;
+
+    min-height: 280px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    text-align: center;
+
+    box-shadow: 0 8px 25px rgba(37, 78, 88, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* Hover */
+
+.step:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 16px 35px rgba(37, 78, 88, 0.15);
+}
+
+
+/* =====================================================
+   STEP NUMBER
+===================================================== */
+
+.step h3 {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 0 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #254E58;
+
+    color: #ffffff;
+
+    font-size: 28px;
+    font-weight: 700;
+
+    line-height: 1;
+
+    flex-shrink: 0;
+
+    box-shadow:
+        0 8px 18px rgba(37, 78, 88, 0.20);
+}
+
+
+/* =====================================================
+   STEP TITLE
+===================================================== */
+
+.step h4 {
+    margin: 0 0 12px;
+
+    color: #254E58;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    line-height: 1.4;
+}
+
+
+/* =====================================================
+   STEP TEXT
+===================================================== */
+
+.step p {
+    margin: 0;
+
+    color: #66787D;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    max-width: 260px;
+}
+
+
+/* =====================================================
+   REMOVE EXTRA DOTS / DECORATIONS
+===================================================== */
+
+/* Important:
+   Prevent old pseudo-elements from creating
+   duplicate circles.
+*/
+
+.step::before,
+.step::after {
+    content: none !important;
+    display: none !important;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .guide-section {
+        width: 92%;
+        margin: 55px auto;
+    }
+
+    .guide-section > h2 {
+        font-size: 32px;
+    }
+
+    .step-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 22px;
+    }
+
+    .step {
+        min-height: 260px;
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 650px) {
+
+    .guide-section {
+        width: 92%;
+        margin: 45px auto;
+    }
+
+    .guide-section > h2 {
+        font-size: 28px;
+    }
+
+    .guide-section > p {
+        font-size: 15px;
+    }
+
+    .step-container {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .step {
+        min-height: auto;
+        padding: 30px 22px;
+    }
+
+    .step h3 {
+        width: 60px;
+        height: 60px;
+
+        font-size: 24px;
+
+        margin-bottom: 20px;
+    }
+
+    .step h4 {
+        font-size: 18px;
+    }
+
+    .step p {
+        font-size: 14px;
+    }
+}
+
+/* =====================================================
+   TECHNOLOGY
+===================================================== */
+
+.technology-section {
+    width: 100%;
+
+    padding: 80px 0;
+
+    background: #ffffff;
+}
+
+.tech-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+.tech-grid span {
+    padding: 18px 20px;
+
+    background: #F4F8FA;
+
+    border: 1px solid #E1EAEC;
+
+    border-radius: 14px;
+
+    text-align: center;
+
+    color: #254E58;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease;
+}
+
+.tech-grid span:hover {
+    transform: translateY(-4px);
+
+    background: #EAF4F3;
+}
+
+
+/* =====================================================
+   ABOUT
+===================================================== */
+
+.about-section {
+    width: 100%;
+
+    padding: 80px 0;
+
+    background: #F4F8FA;
+}
+
+.about-card {
+    background: #ffffff;
+
+    padding: 45px;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 10px 30px rgba(37, 78, 88, 0.08);
+}
+
+.about-info {
+    margin-top: 35px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.about-item {
+    padding: 20px;
+
+    border-radius: 15px;
+
+    background: #F4F8FA;
+}
+
+.about-item span {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #7a898c;
+
+    font-size: 13px;
+}
+
+.about-item strong {
+    color: #254E58;
+
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   CONTACT
+===================================================== */
+
+.contact-section {
+    width: 100%;
+
+    padding: 80px 0;
+}
+
+.contact-card {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    padding: 45px;
+
+    border-radius: 25px;
+
+    background: #254E58;
+
+    box-shadow:
+        0 15px 35px rgba(37, 78, 88, 0.2);
+}
+
+.contact-card h2 {
+    margin-bottom: 10px;
+
+    color: #ffffff;
+
+    font-size: 30px;
+}
+
+.contact-card p {
+    max-width: 650px;
+
+    color: #dce7e7;
+
+    line-height: 1.7;
+}
+
+.contact-card .section-label {
+    color: #88BDBC;
+}
+
+.contact-btn {
+    flex-shrink: 0;
+
+    padding: 14px 25px;
+
+    border-radius: 12px;
+
+    background: #10A37F;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background: #88BDBC;
+
+    color: #254E58;
+
+    transform: translateY(-3px);
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+    width: 100%;
+
+    margin-top: 0;
+
+    background: #254E58;
+
+    color: #ffffff;
+
+    padding: 35px 20px;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-brand {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-bottom: 10px;
+
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.footer-brand i {
+    color: #88BDBC;
+}
+
+.footer-content p {
+    margin: 5px 0;
+
+    color: #dce7e7;
+}
+
+.footer-content .copyright {
+    margin-top: 15px;
+
+    color: #a9babc;
+
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   RESPONSIVE - TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .step-container {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .about-info {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* =====================================================
+   RESPONSIVE - MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .section-container {
+        width: 92%;
+    }
+
+    .guide-section,
+    .technology-section,
+    .about-section,
+    .contact-section {
+        padding: 55px 0;
+    }
+
+    .section-heading {
+        margin-bottom: 30px;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .section-heading p {
+        font-size: 14px;
+    }
+
+    .step-container {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+    .step {
+        padding: 25px 20px;
+    }
+
+    .tech-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 12px;
+    }
+
+    .tech-grid span {
+        padding: 14px 10px;
+
+        font-size: 13px;
+    }
+
+    .about-card {
+        padding: 25px 20px;
+    }
+
+    .about-info {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+    .contact-card {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding: 30px 25px;
+    }
+
+    .contact-card h2 {
+        font-size: 25px;
+    }
+
+    .contact-btn {
+        width: 100%;
+
+        text-align: center;
+    }
+
+}
+
+
+/* =====================================================
+   VERY SMALL MOBILE
+===================================================== */
+
+@media (max-width: 450px) {
+
+    .tech-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading h2 {
+        font-size: 25px;
+    }
+
+    .footer-brand {
+        font-size: 20px;
+    }
+
+}
+/* =========================================================
+   SIGN AI - PRACTICE PAGE
+   Complete Responsive Redesign
+========================================================= */
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.practice-page {
+    width: 100%;
+    min-height: 100vh;
+    background: #F4F8FA;
+    color: #254E58;
+    padding-bottom: 60px;
+}
+
+
+/* Main container */
+
+.practice-page .container,
+.practice-container {
+    width: 92%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   PRACTICE HEADER
+========================================================= */
+
+.practice-header {
+    width: 92%;
+    max-width: 1200px;
+
+    margin: 45px auto 25px;
+
+    text-align: left;
+}
+
+.practice-header .eyebrow {
+    display: inline-block;
+
+    color: #10A37F;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    margin-bottom: 8px;
+}
+
+.practice-header h1 {
+    margin: 0;
+
+    font-size: clamp(30px, 4vw, 48px);
+
+    font-weight: 700;
+
+    color: #254E58;
+
+    line-height: 1.15;
+}
+
+.practice-header p {
+    margin-top: 12px;
+
+    max-width: 700px;
+
+    color: #66777B;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   TOP PRACTICE INFORMATION
+========================================================= */
+
+.practice-info {
+    width: 92%;
+    max-width: 1200px;
+
+    margin: 0 auto 30px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+.practice-info-card {
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    padding: 20px 22px;
+
+    border: 1px solid rgba(37, 78, 88, 0.06);
+
+    box-shadow:
+        0 8px 25px rgba(37, 78, 88, 0.07);
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    transition: 0.3s ease;
+}
+
+
+.practice-info-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 14px 30px rgba(37, 78, 88, 0.12);
+}
+
+
+.practice-info-card i {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: #E8F5F2;
+
+    color: #10A37F;
+
+    font-size: 20px;
+}
+
+
+.practice-info-card .info-text {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.practice-info-card .label {
+    color: #7A898C;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.8px;
+}
+
+
+.practice-info-card .value {
+    margin-top: 3px;
+
+    color: #254E58;
+
+    font-size: 18px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   PRACTICE CONTROLS
+========================================================= */
+
+.practice-controls {
+    width: 92%;
+    max-width: 1200px;
+
+    margin: 0 auto 25px;
+
+    background: #ffffff;
+
+    padding: 22px 25px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 25px rgba(37, 78, 88, 0.07);
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr auto;
+
+    gap: 20px;
+
+    align-items: end;
+}
+
+
+.practice-controls > div {
+    min-width: 0;
+}
+
+
+.practice-controls label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #617276;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+.practice-controls select {
+    width: 100%;
+
+    height: 46px;
+
+    padding: 0 14px;
+
+    border: 1px solid #DCE7E7;
+
+    border-radius: 12px;
+
+    background: #F8FBFB;
+
+    color: #254E58;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 14px;
+
+    outline: none;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+
+.practice-controls select:focus {
+    border-color: #10A37F;
+
+    box-shadow:
+        0 0 0 3px rgba(16, 163, 127, 0.10);
+}
+
+
+/* =========================================================
+   TARGET SIGN CARD
+========================================================= */
+
+.target-card {
+    width: 92%;
+    max-width: 1200px;
+
+    margin: 0 auto 30px;
+
+    padding: 30px;
+
+    border-radius: 24px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff 0%,
+            #F8FCFC 100%
+        );
+
+    border: 1px solid rgba(16, 163, 127, 0.10);
+
+    box-shadow:
+        0 12px 35px rgba(37, 78, 88, 0.08);
+
+    text-align: center;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.target-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    border-radius: 50%;
+
+    background: rgba(16, 163, 127, 0.06);
+
+    top: -100px;
+    right: -70px;
+}
+
+
+.target-card .target-label {
+    color: #10A37F;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+}
+
+
+.target-card h2 {
+    margin: 10px 0;
+
+    font-size: clamp(40px, 7vw, 70px);
+
+    line-height: 1;
+
+    color: #254E58;
+
+    font-weight: 700;
+}
+
+
+.target-card p {
+    margin: 8px 0 20px;
+
+    color: #718084;
+
+    font-size: 14px;
+}
+
+
+/* Existing targetWord */
+
+#targetWord {
+    margin: 8px 0;
+
+    color: #10A37F;
+
+    font-size: clamp(40px, 7vw, 64px);
+
+    font-weight: 700;
+
+    line-height: 1;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.practice-page button,
+.practice-card button,
+.practice-controls button {
+    border: none;
+
+    border-radius: 12px;
+
+    min-height: 46px;
+
+    padding: 0 22px;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.practice-page button:hover,
+.practice-card button:hover {
+    transform: translateY(-2px);
+}
+
+
+.practice-page button:active {
+    transform: translateY(0);
+}
+
+
+/* Start button */
+
+#startPractice,
+#startBtn {
+    background: #10A37F;
+
+    color: #ffffff;
+
+    box-shadow:
+        0 6px 18px rgba(16, 163, 127, 0.20);
+}
+
+
+#startPractice:hover,
+#startBtn:hover {
+    background: #0D8F70;
+
+    box-shadow:
+        0 9px 22px rgba(16, 163, 127, 0.28);
+}
+
+
+/* Stop button */
+
+#stopBtn {
+    background: #EF4444;
+
+    color: #ffffff;
+}
+
+
+#stopBtn:hover {
+    background: #DC2626;
+}
+
+
+/* Next button */
+
+#nextWord {
+    background: #254E58;
+
+    color: #ffffff;
+}
+
+
+#nextWord:hover {
+    background: #1C3D45;
+}
+
+
+/* =========================================================
+   PRACTICE WORKSPACE
+========================================================= */
+
+.practice-workspace {
+
+    width: 92%;
+    max-width: 1200px;
+
+    margin: 0 auto 30px;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.35fr)
+        minmax(320px, 0.85fr);
+
+    gap: 25px;
+
+    align-items: stretch;
+}
+
+
+/* Compatibility with your existing camera section */
+
+.camera-section {
+    width: 92%;
+    max-width: 1200px;
+
+    margin: 30px auto;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.35fr)
+        minmax(320px, 0.85fr);
+
+    gap: 25px;
+}
+
+
+/* =========================================================
+   PANELS
+========================================================= */
+
+.camera-panel,
+.prediction-panel,
+.camera-box,
+.prediction-box {
+
+    background: #ffffff;
+
+    border-radius: 22px;
+
+    padding: 25px;
+
+    border: 1px solid rgba(37, 78, 88, 0.06);
+
+    box-shadow:
+        0 10px 30px rgba(37, 78, 88, 0.08);
+
+    overflow: hidden;
+}
+
+
+.camera-panel h2,
+.prediction-panel h2,
+.camera-box h2,
+.prediction-box h2 {
+
+    margin: 0 0 18px;
+
+    color: #254E58;
+
+    font-size: 20px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   CAMERA
+========================================================= */
+
+.camera-wrapper {
+    position: relative;
+
+    width: 100%;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    background: #101718;
+
+    aspect-ratio: 16 / 9;
+}
+
+
+.camera-panel video,
+.camera-box video,
+#video {
+
+    width: 100%;
+
+    height: 100%;
+
+    min-height: 0;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+
+    background: #111;
+
+}
+
+
+/* Camera status */
+
+.camera-status {
+    position: absolute;
+
+    left: 15px;
+    top: 15px;
+
+    padding: 7px 12px;
+
+    border-radius: 30px;
+
+    background: rgba(37, 78, 88, 0.85);
+
+    color: white;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    backdrop-filter: blur(8px);
+}
+
+
+/* Camera buttons */
+
+.camera-buttons {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+
+    margin-top: 18px;
+}
+
+
+.camera-buttons button {
+
+    width: 100%;
+}
+
+
+/* Existing .buttons inside camera card */
+
+.camera-card .buttons {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+
+    margin-top: 18px;
+}
+
+
+/* =========================================================
+   PREDICTION PANEL
+========================================================= */
+
+.prediction-panel,
+.prediction-box {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+
+.prediction-title {
+
+    width: 100%;
+
+    text-align: left;
+
+    color: #254E58;
+
+    margin-bottom: 5px;
+}
+
+
+.prediction-result {
+
+    width: 100%;
+
+    margin: 10px 0 5px;
+
+    padding: 22px;
+
+    border-radius: 18px;
+
+    background: #F4F9F9;
+
+    border: 1px solid #E4EEEE;
+
+    text-align: center;
+}
+
+
+.prediction-result h1,
+#prediction {
+
+    margin: 0;
+
+    min-height: 48px;
+
+    color: #10A37F;
+
+    font-size: clamp(30px, 4vw, 46px);
+
+    font-weight: 700;
+
+    line-height: 1.15;
+
+    word-break: break-word;
+}
+
+
+.prediction-result p {
+
+    margin-top: 8px;
+
+    color: #718084;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   CONFIDENCE DONUT
+========================================================= */
+
+.donut {
+
+    position: relative;
+
+    width: 180px;
+    height: 180px;
+
+    margin: 20px auto;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+.donut svg {
+
+    width: 180px;
+    height: 180px;
+
+    display: block;
+
+    overflow: visible;
+}
+
+
+/* Background */
+
+.donut .bg {
+
+    fill: none;
+
+    stroke: #DCE7E7;
+
+    stroke-width: 14;
+}
+
+
+/* Progress */
+
+.donut .progress-circle {
+
+    fill: none;
+
+    stroke: #10A37F;
+
+    stroke-width: 14;
+
+    stroke-linecap: round;
+
+    stroke-dasharray: 408.4;
+
+    stroke-dashoffset: 408.4;
+
+    transform: rotate(-90deg);
+
+    transform-origin: 50% 50%;
+
+    transition:
+        stroke-dashoffset 0.5s ease,
+        stroke 0.3s ease;
+}
+
+
+/* Donut center */
+
+.donut-text {
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 105px;
+    height: 105px;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    box-shadow:
+        0 5px 18px rgba(37, 78, 88, 0.12);
+}
+
+
+.donut-text span,
+#confidenceText {
+
+    color: #254E58;
+
+    font-size: 25px;
+
+    font-weight: 700;
+
+    line-height: 1.2;
+}
+
+
+.donut-text small {
+
+    margin-top: 5px;
+
+    color: #7A898C;
+
+    font-size: 10px;
+
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   PREDICTION STATUS
+========================================================= */
+
+.prediction-status {
+
+    width: 100%;
+
+    margin-top: 10px;
+
+    padding: 12px 15px;
+
+    border-radius: 12px;
+
+    background: #F4F9F9;
+
+    color: #617276;
+
+    font-size: 13px;
+
+    font-weight: 500;
+}
+
+
+.status-card {
+
+    width: 100%;
+
+    margin-top: 15px;
+
+    padding: 15px 18px;
+
+    background: #F7FAFA;
+
+    border-radius: 14px;
+
+    border: 1px solid #E6EEEE;
+
+    text-align: left;
+}
+
+
+.status-card h3 {
+
+    margin-bottom: 5px;
+
+    color: #254E58;
+
+    font-size: 14px;
+}
+
+
+.status-card p {
+
+    color: #66777B;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   PRACTICE STATISTICS
+========================================================= */
+
+.practice-stats {
+
+    width: 92%;
+    max-width: 1200px;
+
+    margin: 0 auto 30px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+
+.stat-box {
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    padding: 22px 15px;
+
+    text-align: center;
+
+    border: 1px solid rgba(37, 78, 88, 0.06);
+
+    box-shadow:
+        0 8px 25px rgba(37, 78, 88, 0.07);
+
+    transition: 0.3s ease;
+}
+
+
+.stat-box:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 14px 30px rgba(37, 78, 88, 0.12);
+}
+
+
+.stat-box i {
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #10A37F;
+
+    font-size: 25px;
+}
+
+
+.stat-box h2 {
+
+    margin: 0;
+
+    color: #254E58;
+
+    font-size: 28px;
+
+    font-weight: 700;
+}
+
+
+.stat-box p {
+
+    margin-top: 5px;
+
+    color: #78878A;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   DAILY GOAL
+========================================================= */
+
+.goal-card {
+
+    width: 92%;
+    max-width: 1200px;
+
+    margin: 0 auto 30px;
+
+    padding: 25px;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 25px rgba(37, 78, 88, 0.07);
+}
+
+
+.goal-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 15px;
+}
+
+
+.goal-header h2 {
+
+    margin: 0;
+
+    color: #254E58;
+
+    font-size: 18px;
+}
+
+
+#goalText {
+
+    color: #10A37F;
+
+    font-weight: 700;
+
+    font-size: 14px;
+}
+
+
+.progress-bar {
+
+    width: 100%;
+
+    height: 12px;
+
+    overflow: hidden;
+
+    background: #E4ECEC;
+
+    border-radius: 20px;
+}
+
+
+#goalProgress {
+
+    width: 0%;
+
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            #10A37F,
+            #88BDBC
+        );
+
+    border-radius: inherit;
+
+    transition: width 0.5s ease;
+}
+
+
+/* =========================================================
+   AI COACH / RECOMMENDATION
+========================================================= */
+
+.coach-card,
+.recommend-card {
+
+    width: 92%;
+    max-width: 1200px;
+
+    margin: 0 auto 30px;
+
+    padding: 28px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #254E58,
+            #315F68
+        );
+
+    color: #ffffff;
+
+    border-radius: 22px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 12px 30px rgba(37, 78, 88, 0.18);
+}
+
+
+.coach-card::after,
+.recommend-card::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 220px;
+    height: 220px;
+
+    border-radius: 50%;
+
+    background: rgba(136, 189, 188, 0.08);
+
+    right: -80px;
+    top: -100px;
+}
+
+
+.coach-card h2,
+.recommend-card h2 {
+
+    position: relative;
+
+    z-index: 2;
+
+    margin-bottom: 8px;
+
+    color: #ffffff;
+
+    font-size: 20px;
+}
+
+
+.coach-card p,
+.recommend-card p {
+
+    position: relative;
+
+    z-index: 2;
+
+    color: #DCEAEA;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+#recommendations {
+
+    position: relative;
+
+    z-index: 2;
+
+    margin-top: 15px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+
+#recommendations span {
+
+    background: rgba(255,255,255,0.12);
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    color: #ffffff;
+
+    padding: 8px 14px;
+
+    border-radius: 30px;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   SESSION PROGRESS
+========================================================= */
+
+.session-progress {
+
+    width: 92%;
+    max-width: 1200px;
+
+    margin: 0 auto 30px;
+
+    background: #ffffff;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 25px rgba(37, 78, 88, 0.07);
+}
+
+
+.session-progress h2 {
+
+    margin-bottom: 15px;
+
+    color: #254E58;
+
+    font-size: 18px;
+}
+
+
+.session-progress-bar {
+
+    width: 100%;
+
+    height: 12px;
+
+    background: #E4ECEC;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+
+.session-progress-fill {
+
+    width: 0%;
+
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            #10A37F,
+            #88BDBC
+        );
+
+    border-radius: inherit;
+
+    transition: width 0.5s ease;
+}
+
+
+/* =========================================================
+   RECENT HISTORY
+========================================================= */
+
+.practice-history {
+
+    width: 92%;
+    max-width: 1200px;
+
+    margin: 0 auto 30px;
+
+    background: #ffffff;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 25px rgba(37, 78, 88, 0.07);
+}
+
+
+.practice-history h2 {
+
+    margin-bottom: 15px;
+
+    color: #254E58;
+
+    font-size: 18px;
+}
+
+
+.practice-history ul {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+}
+
+
+.practice-history li {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding: 13px 5px;
+
+    border-bottom: 1px solid #EDF2F2;
+
+    color: #607276;
+
+    font-size: 13px;
+}
+
+
+.practice-history li:last-child {
+
+    border-bottom: none;
+}
+
+
+/* =========================================================
+   EXISTING HISTORY CARD
+========================================================= */
+
+.history-card {
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    padding: 25px;
+
+    box-shadow:
+        0 8px 25px rgba(37, 78, 88, 0.07);
+}
+
+
+.history-card h3,
+.history-card h2 {
+
+    color: #254E58;
+
+    margin-bottom: 15px;
+}
+
+
+.history-card ul {
+
+    list-style: none;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+
+.history-card li {
+
+    padding: 11px 5px;
+
+    border-bottom: 1px solid #EDF2F2;
+
+    color: #647477;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   PRACTICE CARD - OLD HTML COMPATIBILITY
+========================================================= */
+
+.practice-card {
+
+    width: 92%;
+    max-width: 1200px;
+
+    margin: 30px auto;
+
+    padding: 28px;
+
+    background: #ffffff;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 10px 30px rgba(37, 78, 88, 0.08);
+}
+
+
+.practice-card h2 {
+
+    color: #254E58;
+
+    margin-bottom: 20px;
+}
+
+
+.practice-card #targetWord {
+
+    color: #10A37F;
+
+    font-size: 42px;
+}
+
+
+/* =========================================================
+   CAMERA CARD - OLD HOME/PRACTICE HTML
+========================================================= */
+
+.camera-card {
+
+    width: 92%;
+    max-width: 1200px;
+
+    margin: 30px auto;
+
+    padding: 25px;
+
+    background: #ffffff;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 10px 30px rgba(37, 78, 88, 0.08);
+}
+
+
+.camera-card h2 {
+
+    margin-bottom: 18px;
+
+    color: #254E58;
+
+    font-size: 20px;
+}
+
+
+.camera-card video {
+
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    height: auto;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 18px;
+
+    background: #111;
+}
+
+
+.camera-card .buttons {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+
+    margin-top: 18px;
+}
+
+
+/* =========================================================
+   FOOTER SPACING
+========================================================= */
+
+.practice-page + footer,
+body:has(.practice-page) footer {
+
+    margin-top: 20px;
+}
+
+
+/* =========================================================
+   ANIMATION
+========================================================= */
+
+@keyframes practiceFadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(18px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+
+
+.practice-page .practice-header,
+.practice-page .practice-info,
+.practice-page .practice-controls,
+.practice-page .target-card,
+.practice-page .practice-workspace,
+.practice-page .camera-section,
+.practice-page .practice-stats,
+.practice-page .goal-card,
+.practice-page .coach-card,
+.practice-page .recommend-card,
+.practice-page .session-progress,
+.practice-page .practice-history {
+
+    animation:
+        practiceFadeUp 0.55s ease both;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .practice-info {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .practice-controls {
+
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+
+    .practice-controls .buttons {
+
+        grid-column: 1 / -1;
+    }
+
+
+    .practice-workspace,
+    .camera-section {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .practice-stats {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .practice-page {
+
+        padding-bottom: 40px;
+    }
+
+
+    .practice-header {
+
+        width: 94%;
+
+        margin-top: 30px;
+
+        margin-bottom: 20px;
+    }
+
+
+    .practice-header h1 {
+
+        font-size: 32px;
+    }
+
+
+    .practice-header p {
+
+        font-size: 14px;
+    }
+
+
+    .practice-info {
+
+        width: 94%;
+
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+
+    .practice-info-card {
+
+        padding: 16px;
+    }
+
+
+    .practice-controls {
+
+        width: 94%;
+
+        grid-template-columns: 1fr;
+
+        padding: 20px;
+    }
+
+
+    .practice-controls .buttons {
+
+        grid-column: auto;
+    }
+
+
+    .target-card {
+
+        width: 94%;
+
+        padding: 25px 18px;
+    }
+
+
+    .practice-workspace,
+    .camera-section {
+
+        width: 94%;
+
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+
+    .camera-panel,
+    .prediction-panel,
+    .camera-box,
+    .prediction-box {
+
+        padding: 18px;
+
+        border-radius: 18px;
+    }
+
+
+    .camera-panel video,
+    .camera-box video,
+    #video {
+
+        aspect-ratio: 4 / 3;
+
+        border-radius: 14px;
+    }
+
+
+    .camera-buttons,
+    .camera-card .buttons {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .practice-stats {
+
+        width: 94%;
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 12px;
+    }
+
+
+    .stat-box {
+
+        padding: 18px 10px;
+    }
+
+
+    .stat-box h2 {
+
+        font-size: 24px;
+    }
+
+
+    .goal-card,
+    .coach-card,
+    .recommend-card,
+    .session-progress,
+    .practice-history {
+
+        width: 94%;
+
+        padding: 20px;
+
+        border-radius: 18px;
+    }
+
+
+    .donut {
+
+        width: 160px;
+
+        height: 160px;
+    }
+
+
+    .donut svg {
+
+        width: 160px;
+
+        height: 160px;
+    }
+
+
+    .donut-text {
+
+        width: 95px;
+
+        height: 95px;
+    }
+
+
+    .donut-text span,
+    #confidenceText {
+
+        font-size: 22px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .practice-header h1 {
+
+        font-size: 28px;
+    }
+
+
+    .practice-header p {
+
+        font-size: 13px;
+
+        line-height: 1.6;
+    }
+
+
+    .practice-info-card {
+
+        padding: 14px;
+    }
+
+
+    .practice-info-card i {
+
+        width: 42px;
+
+        height: 42px;
+
+        font-size: 17px;
+    }
+
+
+    .practice-info-card .value {
+
+        font-size: 16px;
+    }
+
+
+    .target-card {
+
+        padding: 22px 15px;
+    }
+
+
+    #targetWord {
+
+        font-size: 48px;
+    }
+
+
+    .practice-stats {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 10px;
+    }
+
+
+    .stat-box {
+
+        padding: 16px 8px;
+    }
+
+
+    .stat-box i {
+
+        font-size: 20px;
+    }
+
+
+    .stat-box h2 {
+
+        font-size: 21px;
+    }
+
+
+    .stat-box p {
+
+        font-size: 10px;
+    }
+
+
+    .prediction-result {
+
+        padding: 18px 10px;
+    }
+
+
+    .prediction-result h1,
+    #prediction {
+
+        font-size: 30px;
+    }
+
+
+    .donut {
+
+        width: 145px;
+
+        height: 145px;
+    }
+
+
+    .donut svg {
+
+        width: 145px;
+
+        height: 145px;
+    }
+
+
+    .donut-text {
+
+        width: 84px;
+
+        height: 84px;
+    }
+
+
+    .donut-text span,
+    #confidenceText {
+
+        font-size: 20px;
+    }
+
+
+    .donut-text small {
+
+        font-size: 9px;
+    }
+
+
+    .goal-header {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+
+    .practice-history li {
+
+        font-size: 12px;
+    }
+
+}
+/* ==========================================================
+   SIGN AI — LIVE CAMERA + HAND LANDMARKS
+========================================================== */
+
+.camera-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    background: #101718;
+
+    border: 5px solid #254E58;
+
+    isolation: isolate;
+}
+
+
+/* ==========================================================
+   LIVE VIDEO
+========================================================== */
+
+.camera-wrapper video {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    background: #101718;
+
+    z-index: 1;
+
+    transform: scaleX(-1);
+}
+
+
+/* ==========================================================
+   HAND LANDMARK CANVAS
+========================================================== */
+
+.hand-canvas {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+
+    z-index: 5;
+
+    transform: scaleX(-1);
+}
+
+
+/* ==========================================================
+   CAMERA OFF OVERLAY
+========================================================== */
+
+.camera-overlay {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #0d0d0d;
+
+    z-index: 5;
+
+    transition: opacity 0.25s ease;
+}
+
+.camera-overlay.camera-started {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+/* ==========================================================
+   HAND ICON
+========================================================== */
+
+.camera-hand-circle {
+
+    width: 110px;
+
+    height: 110px;
+
+    border: 2px dashed
+        rgba(255,255,255,0.75);
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 22px;
+}
+
+
+.camera-hand-circle i {
+
+    font-size: 48px;
+
+    color: #ffffff;
+}
+
+
+.camera-overlay strong {
+
+    font-size: 19px;
+
+    font-weight: 700;
+
+    margin-bottom: 7px;
+}
+
+
+.camera-overlay span {
+
+    font-size: 14px;
+
+    opacity: 0.85;
+}
+
+
+/* ==========================================================
+   CAMERA CORNER GUIDES
+========================================================== */
+
+.camera-corner {
+
+    position: absolute;
+
+    width: 36px;
+
+    height: 36px;
+
+    z-index: 12;
+
+    pointer-events: none;
+}
+
+
+.camera-corner.top-left {
+
+    top: 18px;
+    left: 18px;
+
+    border-top: 3px solid #ffffff;
+    border-left: 3px solid #ffffff;
+}
+
+
+.camera-corner.top-right {
+
+    top: 18px;
+    right: 18px;
+
+    border-top: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+}
+
+
+.camera-corner.bottom-left {
+
+    bottom: 18px;
+    left: 18px;
+
+    border-bottom: 3px solid #ffffff;
+    border-left: 3px solid #ffffff;
+}
+
+
+.camera-corner.bottom-right {
+
+    bottom: 18px;
+    right: 18px;
+
+    border-bottom: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+}
+
+
+/* ==========================================================
+   LANDMARK STATUS
+========================================================== */
+
+.landmark-status {
+
+    position: absolute;
+
+    left: 50%;
+
+    bottom: 18px;
+
+    transform: translateX(-50%);
+
+    z-index: 15;
+
+    padding: 8px 15px;
+
+    border-radius: 30px;
+
+    background:
+        rgba(16, 23, 24, 0.75);
+
+    backdrop-filter: blur(8px);
+
+    color: #ffffff;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    pointer-events: none;
+
+    transition:
+        all 0.25s ease;
+}
+
+
+.landmark-status.detected {
+
+    background:
+        rgba(16, 163, 127, 0.88);
+
+}
+
+
+.landmark-status.no-hand {
+
+    background:
+        rgba(245, 158, 11, 0.88);
+
+}
+
+
+/* ==========================================================
+   CAMERA RUNNING STATE
+========================================================== */
+
+.camera-wrapper.camera-active
+.camera-overlay {
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 768px) {
+
+    .camera-wrapper {
+
+        aspect-ratio: 4 / 3;
+
+        border-width: 4px;
+
+        border-radius: 15px;
+
+    }
+
+    .camera-hand-circle {
+
+        width: 85px;
+
+        height: 85px;
+
+    }
+
+    .camera-hand-circle i {
+
+        font-size: 38px;
+
+    }
+
+    .camera-overlay strong {
+
+        font-size: 16px;
+
+    }
+
+    .camera-overlay span {
+
+        font-size: 12px;
+
+    }
+
+    .camera-corner {
+
+        width: 28px;
+
+        height: 28px;
+
+    }
+
+}
+/* =====================================================
+   SIGN TO PREDICT
+===================================================== */
+
+.sign-to-predict {
+    margin-top: 20px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #e5eeee;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+
+/* HEADER */
+
+.sign-to-predict-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+
+.sign-to-predict-header h3 {
+    margin: 5px 0 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: #234f5b;
+}
+
+
+.predict-badge {
+    padding: 7px 12px;
+    border-radius: 20px;
+    background: #e8f5f5;
+    color: #27616d;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* IMAGE */
+
+.predict-sign-image {
+    width: 100%;
+    height: 280px;
+
+    background: #f3f7f8;
+
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    border: 1px solid #e1e9eb;
+}
+
+
+.predict-sign-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    display: none;
+}
+
+
+.predict-image-placeholder {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    color: #78909c;
+
+    font-size: 15px;
+}
+
+
+.predict-image-placeholder i {
+    font-size: 45px;
+    color: #2b626d;
+}
+
+
+/* INFORMATION */
+
+.predict-sign-info {
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+.predict-sign-info strong {
+    display: block;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    color: #234f5b;
+}
+
+
+.predict-sign-info p {
+    margin: 6px 0 0;
+
+    font-size: 14px;
+    line-height: 1.6;
+
+    color: #78909c;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .sign-to-predict {
+        margin-top: 18px;
+        padding: 16px;
+    }
+
+    .sign-to-predict-header h3 {
+        font-size: 20px;
+    }
+
+    .predict-sign-image {
+        height: 240px;
+    }
+
+    .predict-sign-info strong {
+        font-size: 20px;
+    }
+
+}
+/* =========================================
+   PROFILE PAGE
+========================================= */
+
+.profile-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 25px;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.profile-header {
+    margin-bottom: 30px;
+}
+
+.profile-header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.profile-header p {
+    color: #777;
+    font-size: 15px;
+}
+
+
+/* =========================================
+   PROFILE GRID
+========================================= */
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 25px;
+}
+
+
+/* =========================================
+   PROFILE CARD
+========================================= */
+
+.profile-card {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+.profile-image {
+    margin-bottom: 15px;
+}
+
+
+.avatar {
+    width: 110px;
+    height: 110px;
+
+    margin: auto;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(
+        135deg,
+        #6a2bd9,
+        #9b5de5
+    );
+
+    color: white;
+
+    font-size: 35px;
+
+    font-weight: bold;
+}
+
+
+.profile-card h2 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+
+.profile-role {
+    display: inline-block;
+
+    padding: 6px 15px;
+
+    border-radius: 20px;
+
+    background: #eee5ff;
+
+    color: #6425bd;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+.profile-email {
+    margin-top: 12px;
+    color: #777;
+}
+
+
+.profile-divider {
+    height: 1px;
+
+    background: #eee;
+
+    margin: 25px 0;
+}
+
+
+.account-status {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    color: #299447;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+.status-dot {
+    width: 9px;
+    height: 9px;
+
+    border-radius: 50%;
+
+    background: #32b557;
+}
+
+
+.member {
+    margin-top: 15px;
+
+    color: #999;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   INFORMATION CARD
+========================================= */
+
+.information-card {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+.card-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+
+.card-header h2 {
+    font-size: 21px;
+}
+
+
+/* =========================================
+   EDIT BUTTON
+========================================= */
+
+.edit-button {
+    border: none;
+
+    padding: 10px 18px;
+
+    border-radius: 8px;
+
+    background: #eee5ff;
+
+    color: #6425bd;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+.edit-button:hover {
+    background: #dfd0ff;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.profile-form {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.form-group label {
+    margin-bottom: 8px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    color: #666;
+}
+
+
+.form-group input {
+    padding: 13px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    background: #f8f8f8;
+
+    font-size: 14px;
+}
+
+
+.form-group input:focus {
+    border-color: #6a2bd9;
+
+    background: white;
+}
+
+
+.form-group input:disabled {
+    cursor: not-allowed;
+
+    color: #555;
+}
+
+
+/* =========================================
+   ACTION BUTTONS
+========================================= */
+
+.action-buttons {
+    justify-content: flex-end;
+
+    gap: 10px;
+
+    margin-top: 25px;
+}
+
+
+.cancel-button {
+    padding: 11px 20px;
+
+    border: 1px solid #ddd;
+
+    background: white;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+
+.save-button {
+    padding: 11px 20px;
+
+    border: none;
+
+    background: #6a2bd9;
+
+    color: white;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+}
+
+
+.save-button:hover {
+    background: #5720b5;
+}
+
+
+/* =========================================
+   STATISTICS
+========================================= */
+
+.statistics-section {
+    margin-top: 30px;
+}
+
+
+.statistics-section h2 {
+    margin-bottom: 18px;
+}
+
+
+.statistics-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+.stat-card {
+    background: white;
+
+    padding: 22px;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    box-shadow:
+        0 6px 20px
+        rgba(0, 0, 0, 0.06);
+}
+
+
+.stat-icon {
+    width: 50px;
+
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: #eee5ff;
+
+    font-size: 24px;
+}
+
+
+.stat-card h3 {
+    font-size: 25px;
+
+    color: #4b1c87;
+}
+
+
+.stat-card p {
+    color: #888;
+
+    font-size: 13px;
+
+    margin-top: 3px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .profile-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .statistics-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .profile-page {
+        padding: 25px 15px;
+    }
+
+
+    .profile-header h1 {
+        font-size: 26px;
+    }
+
+
+    .profile-form {
+        grid-template-columns: 1fr;
+    }
+
+
+    .statistics-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .card-header {
+        align-items: flex-start;
+
+        gap: 15px;
+
+        flex-direction: column;
+    }
+
+}
